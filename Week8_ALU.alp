@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Week8_ALU" board="Alchitry Au" language="Lucid" version="3">
+  <files>
+    <src>fasixteen.luc</src>
+    <src>comparesixteen.luc</src>
+    <src top="true">au_top.luc</src>
+    <src>boolesixteen.luc</src>
+    <src>fullAdder.luc</src>
+    <component>reset_conditioner.luc</component>
+    <src>aa.luc</src>
+    <src>shiftersixteen.luc</src>
+    <constraint lib="true">alchitry.acf</constraint>
+    <constraint lib="true">au.xdc</constraint>
+  </files>
+</project>

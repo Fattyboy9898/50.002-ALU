@@ -1,0 +1,9 @@
+module shiftersixteen (
+   input alufn[2];
+    
+  ) {
+
+  always {
+    out = 0;
+  }
+}

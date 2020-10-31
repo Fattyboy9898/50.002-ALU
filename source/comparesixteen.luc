@@ -1,0 +1,23 @@
+module comparesixteen (
+    input alufn1,
+    input alufn2,
+    input z,
+    input v,
+    input n,
+    output cmp[16]
+  ) {
+  sig nvxor, zornxorv; 
+  always {
+    cmp[15:1]=0;
+    nvxor = n ^ v;
+    zornxorv = z | nvxor;
+    
+    if(alufn1 == 1 & alufn2==0){
+        cmp[0]=z;
+    } 
+    else if (alufn1==0 & alufn2==1){
+        cmp[0]=nvxor;
+  } else if (alufn1==1 & alufn2==1){
+        cmp[0]=zornxorv;
+    }
+}
